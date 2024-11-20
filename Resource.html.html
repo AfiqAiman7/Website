@@ -1,0 +1,130 @@
+<!--MUHAMMAD AFIQ AIMAN BIN RUSLAN.HTML-->
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MY Resource WEBSITE</title>
+	<link rel="stylesheet" href="websiteAfiqAiman.css"> 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Tapestry&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/42532c9d5a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<section class="sub-header5">
+		<nav>
+			<div class="nav-links" id="navLinks"> 
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="Home.html.html" target="_blank">HOME</a></li>
+					<li><a href="Interest-1.html.html" target="_blank">(EX)HOBBY</a></li>
+					<li><a href="Interest-2.html.html" target="_blank">(IN)HOBBY</a></li>
+					<li><a href="Resume.html.html" target="_blank">RESUME</a></li>
+					<li><a href="Resource.html.html" target="_blank">RESOURCE</a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars onclick=" onclick="showMenu()"></i>
+		</nav>
+		<h1>My Resources</h1>
+		<p>This is the links for my favourite website that I like and useful websites for csc264.</p>
+	</section>
+
+	<!-------			MY RESOURCE		   ------->
+		<section class="fav__link">
+			<h1>Favorites</h1>
+			<p>Links to my favourite website that I liked but not well known</p>
+			<div class="link__row">
+				<div class="link__col">
+					<img src="images/dragonFableIntro.png">
+					<div class="link__layer">
+						<a class="link__layer--btn" href="https://www.dragonfable.com//" target="_blank">Dragon daFable</a>
+						<p>This is video game website that play RPG. I like it because this is my childhood game and the best RPG ever for me.</p>
+					</div>
+				</div>
+				<div class="link__col">
+					<img src="images/Movies.png">
+					<div class="link__layer">
+						<a class="link__layer--btn" href="https://movies7.to/" target="_blank">Movies</a>
+						<p>This is the pirate version of movies. I like it because it is free even though it is illegal to watch.</p>
+					</div>
+				</div>
+				<div class="link__col">
+					<img src="images/english.png">
+					<div class="link__layer">
+						<a class="link__layer--btn" href="https://www.englisch-hilfen.de/en/grammar/unreg_verben1.htm" target="_blank">Learn English</a>
+						<p>A website that provides an english learning. I can correct my grammer by checking this website.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="csc264__link">
+			<div class="csc264__link--container">
+				<h1>CS264</h1>
+				<p>Links to website that are related to the CS264 course</p>
+					<div class="link__row">
+						<div class="link__col">
+							<img src="images/GeeksForGeeks.png">
+							<div class="link__layer">
+								<a class="link__layer--btn" href="https://www.geeksforgeeks.org/html/" target="_blank">GeeksForGeeks</a>
+								<p>Websites that teach about coding that have code as a guide for testing programs.</p>
+							</div>
+						</div>
+						<div class="link__col">
+							<img src="images/Codecademy.png">
+							<div class="link__layer">
+								<a class="link__layer--btn" href="https://www.codecademy.com/" target="_blank">Codecademy</a>
+								<p>Websites to learn about coding with a tutorial at the side.</p>
+							</div>
+						</div>
+						<div class="link__col">
+							<img src="images/w3schools.png">
+							<div class="link__layer">
+								<a class="link__layer--btn" href="https://www.w3schools.com/html/" target="_blank">W3Schools</a>
+								<p>A website that provides references, quiz and also test for exercising your coding.</p>
+							</div>
+						</div>
+					</div>
+			</div>
+		</section>
+
+		<!-- Footer Section -->
+		<div class="footer__container">
+			<div class="social__media">
+				<div class="social__media--wrapper">
+					<div class="footer__logo">
+						<a href="" id="footer__logo"><i class="fa-solid fa-bug"> Afiq Aiman</i></a>
+					</div>
+					<p class="website__rights">© Afiq Aiman 2022 Website Reserveed.</p>
+					<div class="social__icon">
+						<a href="https://wa.me/01136743578" class="social__icon--link" target="_blank">
+							<i class="fa-brands fa-whatsapp"></i>
+						</a>
+							<a href="https://t.me/ChealseaWaifu" class="social__icon--link" target="_blank">
+						<i class="fa-brands fa-telegram"></i>
+						</a>
+						<a href="https://web.facebook.com/afiq.aiman.73/" class="social__icon--link" target="_blank">
+							<i class="fa-brands fa-facebook"></i>
+						</a>
+						<a href="https://www.instagram.com/live7evil/" class="social__icon--link" target="_blank">
+							<i class="fa-brands fa-instagram"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="app.js"></script>
+
+	<!-------JavaScript for Toggle Menu------->
+	<script>
+		var navLinks = document.getElementById("navLinks");
+		function showMenu(){
+			navLinks.style.right = "0";
+		}
+		function hideMenu(){
+			navLinks.style.right = "-200px";
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!--MUHAMMAD AFIQ AIMAN BIN RUSLAN.HTML-->
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AFIQ AIMAN WEBSITE</title>
+	<link rel="stylesheet" href="websiteAfiqAiman.css"> 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Tapestry&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/42532c9d5a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<section class="header">
+		<a href="WebsiteAfiqAiman.html"><img src="images/helloDisney.gif" width="230" height="150"></a>
+		<nav>
+			<div class="nav-links" id="navLinks"> 
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="Home.html.html" target="_blank">HOME</a></li>
+					<li><a href="Interest-1.html.html" target="_blank">(EX)HOBBY</a></li>
+					<li><a href="Interest-2.html.html" target="_blank">(IN)HOBBY</a></li>
+					<li><a href="Resume.html.html" target="_blank">RESUME</a></li>
+					<li><a href="Resource.html.html" target="_blank">RESOURCE</a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars onclick=" onclick="showMenu()"></i>
+		</nav>
+
+		<div class="text-box">
+			<h1>My Personal Website</h1>
+			<p>This is my first time making website using HTML and CSS. <br> I hope i'm doing an excellent personal website even though this is my first time.</p>
+
+		</div>
+	</section>
+	<!-------JavaScript for Toggle Menu------->
+	<script>
+		var navLinks = document.getElementById("navLinks");
+		function showMenu(){
+			navLinks.style.right = "0";
+		}
+		function hideMenu(){
+			navLinks.style.right = "-200px";
+		}
+	</script>
+</body>
+</html>

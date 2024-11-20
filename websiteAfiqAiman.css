@@ -1,0 +1,914 @@
+/*MUHAMMAD AFIQ AIMAN BIN RUSLAN.CSS*/
+*{
+	margin: 0; 
+	padding: 0;
+	font-family: 'Tapestry', cursive;
+}
+.header{
+	min-height : 100vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,3,0.7)),url(images/websiteBackground2.png);
+	background-position: center;
+	background-size:  cover;
+	position: relative;
+}
+nav{
+	display: fex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+}
+nav img{
+	width:  150px;
+}
+.nav-links{
+	flex: 1;
+	text-align: right;
+}
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+}
+.nav-links ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 13px;
+}
+.nav-links ul li ::after{
+	content: '';
+	width: 0%;
+	height: 2px;
+	background: #f44336;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+.nav-links ul li :hover::after{
+	width: 100%;
+}
+.text-box{
+	width: 90%;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%4transform: translate(-50%,-50%);
+	text-align: center;
+}
+.text-box h1{
+	font-size: 62px;
+}
+.text-box p{
+	margin: 10px 0 40px;
+	font-size: 14px;
+	color: #fff;
+}
+nav .fa{
+	display: none;
+}
+@media(max-width: 700px){
+	.text-box h1{
+		font-size: 20px;
+	}
+	.nav-links ul li{
+		display: block;
+	}
+	.nav-links{
+		position: absolute;
+		background: #000099;
+		height: 100%;
+		width: 200px;
+		top: 0;
+		right: 0;
+		text-align: left;
+		z-index: 2;
+		transition: 0.5s;
+	}
+	nav .fa{
+		display: block;
+		color: #fff;
+		margin: 10px;
+		font-size: 22px;
+		cursor: pointer;
+	}
+	.nav-links ul{
+		padding: 20px;
+	}
+}
+
+/*------HOME PAGE-------*/
+.sub-header{
+	height: 70vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,3,0.7)),url(images/alone2.png);
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+}
+.sub-header h1{
+	margin-top: 100px;
+	font-size: 70px;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 520px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 80px;
+  border-top: 2px solid #eeeeee;
+}
+
+.about-me img {
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.about-me-text h2 {
+  font-size: 30px;
+  color: #333333;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.about-me-text p {
+  font-size: 15px;
+  color: #585858;
+  margin: 10px 0;
+}
+
+.achievements {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 80px;
+}
+
+.achievements{
+	flex-basis: 31%;
+	background: #fff3f3;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	padding: 20px 12px;
+	box-sizing: border-box;
+}
+.achievements .work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 23px;
+}
+
+.achievements .work i {
+  width: fit-content;
+  font-size: 50px;
+  color: #333333;
+  border-radius: 50%;
+  border: 2px solid #333333;
+  padding: 12px;
+}
+
+.achievements .work .work-heading {
+  font-size: 20px;
+  color: #333333;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+.achievements .work .work-text {
+  font-size: 15px;
+  color: #585858;
+  margin: 15px 0;
+}
+
+@media(max-width: 700px){
+	.intro{
+		flex-direction: column;
+	}
+	.achievements{
+		flex-direction: column;
+	}
+}
+
+.Course {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 80px;
+  border-top: 2px solid #eeeeee;
+}
+
+.Course{
+	flex-basis: 31%;
+	background: #F4F2D3;
+	border-radius: 10px;
+	padding: 20px 12px;
+	box-sizing: border-box;
+}
+
+.Course-text h2 {
+  font-size: 30px;
+  color: #333333;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.Course-text ul {
+  font-size: 15px;
+  color: #585858;
+  margin: 10px 0;
+}
+
+/*-------			MY EXTROVERT HOBBY		   -------*/
+.my-hobby{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 80px;
+    border-top: 2px solid #eeeeee;
+	flex-basis: 31%;
+	background: rgba(0, 90, 255, 0.21);
+	border-radius: 10px;
+	padding: 20px 12px;
+	box-sizing: border-box;
+}
+
+.my-hobby-text h2{
+  font-size: 40px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.ronaldo{
+    max-width: 65%;
+    height: auto;
+}
+
+.Interest1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 80px;
+}
+
+.Interest1 {
+	flex-basis: 31%;
+	background: #fff3f3;
+	border-radius: 10px;
+	padding: 20px 12px;
+	box-sizing: border-box;
+}
+.Interest1 .work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 23px;
+}
+
+.Interest1 .work i {
+  width: fit-content;
+  font-size: 50px;
+  color: #333333;
+  border-radius: 50%;
+  border: 2px solid #333333;
+  padding: 12px;
+}
+
+.Interest1 .work .work-heading {
+  font-size: 20px;
+  color: #333333;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+.Interest1 .work .work-text {
+  font-size: 15px;
+  color: #585858;
+  margin: 15px 0;
+}
+
+.work img {
+  width: 230px;
+  max-width: 100%;
+  height: 190px;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+
+.videos {
+	flex-basis: 31%;
+	background: rgba(0, 255, 0, 0.21);
+	border-radius: 10px;
+	padding: 20px 12px;
+	box-sizing: border-box;
+}
+.videos p{
+	font-size: 26px;
+    text-transform: uppercase;
+}
+
+@media(max-width: 700px){
+	.my-hobby{
+		flex-direction: column;
+	}
+	.Interest1{
+		flex-direction: column;
+	}
+	.videos{
+		flex-direction: column;
+	}
+}
+
+.sub-header3{
+	height: 70vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,3,0.7)),url(images/football1.png);
+	background-position: center;
+	background-size: cover;
+	color: #fff;
+}
+
+.sub-header3 h1{
+	margin-top: 100px;
+	font-size: 70px;
+	text-align: center;
+}
+
+/*-------			MY INTROVERT HOBBY		   -------*/
+.sub-header4{
+	height: 70vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,3,0.7)),url(images/GAMING_CHAIR.png);
+	background-position: center;
+	background-size: cover;
+	color: #fff;
+}
+
+.sub-header4 h1{
+	margin-top: 100px;
+	font-size: 70px;
+	text-align: center;
+}
+
+.my-hobby2{
+    justify-content: center;
+    align-items: center;
+    padding: 40px 80px;
+    border-top: 3px solid #eeeeee;
+	border-radius: 10px;
+	box-sizing: border-box;
+}
+
+.my-hobby2{
+	height: auto;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,3,0.7)),url(images/hyper_duck.gif);
+	background-position: center;
+	background-size: cover;
+	color: #fff;
+}
+
+.my-hobby2-text h2{
+  font-size: 40px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.reyna img{
+	width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.Interest2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 80px;
+}
+
+.Interest2 {
+	flex-basis: 31%;
+	background: rgba(0, 90, 255, 0.21);
+	border-radius: 10px;
+	padding: 20px 12px;
+	box-sizing: border-box;
+}
+
+.Interest2 .work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 23px;
+}
+
+.Interest2 .work i {
+  width: fit-content;
+  font-size: 50px;
+  color: #333333;
+  border-radius: 50%;
+  border: 2px solid #333333;
+  padding: 12px;
+}
+
+.Interest2 .work .work-heading {
+  font-size: 20px;
+  color: #333333;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+.Interest2 .work .work-text {
+  font-size: 15px;
+  color: #585858;
+  margin: 15px 0;
+}
+
+.videos2 {
+	flex-basis: 31%;
+	background: rgba(0, 255, 0, 0.21);
+	border-radius: 10px;
+	padding: 20px 12px;
+	box-sizing: border-box;
+}
+.videos2 p{
+	font-size: 26px;
+    text-transform: uppercase;
+}
+
+@media(max-width: 700px){
+	.my-hobby2{
+		flex-direction: column;
+	}
+	.Interest2{
+		flex-direction: column;
+	}
+	.videos2{
+		flex-direction: column;
+	}
+}
+
+/*-------			MY RESOURCE		   -------*/
+
+.sub-header5{
+	height: 80vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)),url(images/resources2.png);
+	background-position: center;
+	background-size: cover;
+	color: #fff;
+}
+
+.sub-header5 h1{
+	margin-top: 100px;
+	font-size: 70px;
+	text-align: center;
+}
+
+.sub-header5 p{
+	font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Favorite Link Section CSS*/
+.fav__link{
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.fav__link h1{
+    color: #141414;
+    font-size: 2.5rem;
+}
+
+.csc264__link--container{
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.csc264__link{
+    background-color: rgba(0, 90, 255, 0.21);
+}
+
+.link__col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.link__row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link__col img{
+    width: 100%;
+    display: block;
+}
+
+.link__col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+.link__layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.link__layer:hover{
+    background: #20bcffb3;
+}
+
+.link__layer p{
+    color: #ffff;
+}
+
+.link__layer--btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffff;
+    border: 2px solid #ffff;
+    border-radius: 5px;
+    padding: 12px 34px;
+    font-size: 20px;
+    font-weight: 600;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Hover effect */
+.link__layer--btn:hover {
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+.link__layer a{
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.link__layer p{
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.link__layer:hover a{
+    bottom: 50%;
+    opacity: 1;
+}
+
+.link__layer:hover p{
+	font-size: 14px;
+    bottom: 13%;
+    opacity: 1;
+}
+
+/* Footer Section */
+.footer__container{
+    background-color: #ffff;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer__logo{
+    color: #141414;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.social__icon--link{
+    color: #141414;
+    font-size: 24px;
+}
+
+.social__media{
+    max-width: 1000px;
+    width: 100%;
+}
+
+.social__media--wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto 0 auto;
+}
+
+.social__icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+}
+
+.social__logo{
+    color: #141414;
+    justify-self: flex-start;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.website__rights{
+    color: #141414;
+}
+
+@media screen and (max-width: 820px){
+
+	.link__row{
+        flex-direction: column;
+    }
+
+    .website__rights{
+        margin-bottom: 2rem;
+    }
+
+    #footer__logo{
+        margin-bottom: 2rem;
+    }
+
+    .social__media--wrapper{
+        flex-direction: column;
+    }
+}
+
+/*-------			MY Resume		   -------*/
+.sub-header6{
+	min-height : 100vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0));
+	background-position: center;
+	background-size:  cover;
+	position: relative;
+}
+.sub-header6 nav{
+	display: fex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.57);
+	margin-bottom: 15px;
+}
+
+.sub-header6 .nav-links{
+	flex: 1;
+	text-align: right;
+}
+
+.sub-header6 .nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+}
+
+.sub-header6 .nav-links ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 13px;
+}
+
+.sub-header6 .nav-links ul li ::after{
+	content: '';
+	width: 0%;
+	height: 2px;
+	background: #f44336;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+
+.sub-header6.nav-links ul li :hover::after{
+	width: 100%;
+}
+
+.bold
+{
+	font-weight: 700;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.semiBold
+{
+	font-weight: 700;
+	font-size: 16px;
+}
+
+.resume
+{
+	width: 800px;
+	height: auto;
+	display: flex;
+	margin-left: 50vh;
+}
+
+.resume .resumeLeft
+{
+	width: 280px;
+	background-color: rgba(0, 0, 0, 0.33);
+}
+
+.resume .resumeLeft .resumeProfile
+{
+	width: 100%;
+	height: auto;
+}
+
+.resume .resumeLeft .resumeProfile img
+{
+	width: 100%;
+}
+.resume .resumeLeft .resumeContent
+{
+	padding: 0 25px;
+}
+
+.resume .title
+{
+	margin-bottom: 20px;
+}
+
+.resume .resumeLeft .bold
+{
+	color: #fff;
+}
+
+.resume .resumeLeft .regular
+{
+	color: #fff;
+}
+
+.resume .resumeLeft .resumeItem
+{
+	padding: 25px 0;
+}
+
+.resume .resumeLeft .resumeItem:last-child
+{
+	border-bottom: 0px;
+}
+
+.resume .resumeLeft ul li
+{
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.resume .resumeLeft ul li:last-child
+{
+	margin-bottom: 0;
+}
+
+.resume .resumeLeft ul li .icon
+{
+	width: 35px;
+	height: 35px;
+	background: #fff;
+	border-radius: 50%;
+	margin-right: 15px;
+	font-size: 16px;
+	position: relative;
+}
+
+.resume .icon i
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.resume .resumeLeft ul li .data
+{
+	color: #fff;
+}
+
+.resume .resumeLeft .resumeSkills ul li
+{
+	color: #fff;
+	justify-content: space-between;
+}
+
+.resume .resumeLeft .resumeSkills ul li .skillName
+{
+	width: 25%;
+}
+.resume .resumeLeft .resumeSkills ul li .skillProgress
+{
+	width: 60%;
+	margin: 0 5px;
+	height: 5px;
+	background: #AF4C46;
+	position: relative;
+}
+
+.resume .resumeLeft .resumeSkills ul li .skillPer
+{
+	width: 15%;	
+}
+
+.resume .resumeLeft .resumeSkills ul li .skillProgress span
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: #fff;
+}
+
+.resume .resumeRight
+{
+	width: 520px;
+	background: rgba(0, 90, 255, 0.21);
+	padding: 25px;
+}
+
+.resume .resumeRight .resumeItem
+{
+	padding: 25px 0;
+	border-bottom: 2px solid #6F756F;
+}
+
+.resume .resumeRight .bold
+{
+	color: #6F756F;
+}
+
+.resume .resumeRight .semiBold
+{
+	color: #6F756F;
+}
+
+.resume .resumeRight .resumeWork ul,
+.resume .resumeRight .resumeEducation ul
+{
+	padding-left: 40px;
+	overflow: hidden;
+}
+
+.resume .resumeRight ul li
+{
+	position: relative;
+	color: #6F756F;
+}
+
+.resume .resumeRight ul li .date
+{
+	font-size: 17px;
+	font-weight: 700;
+	margin-bottom: 15px;
+}

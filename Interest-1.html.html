@@ -1,0 +1,87 @@
+<!--MUHAMMAD AFIQ AIMAN BIN RUSLAN.HTML-->
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MY HOBBY1 WEBSITE</title>
+	<link rel="stylesheet" href="websiteAfiqAiman.css"> 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Tapestry&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/42532c9d5a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<section class="sub-header3">
+		<nav>
+			<div class="nav-links" id="navLinks"> 
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="Home.html.html" target="_blank">HOME</a></li>
+					<li><a href="Interest-1.html.html" target="_blank">(EX)HOBBY</a></li>
+					<li><a href="Interest-2.html.html" target="_blank">(IN)HOBBY</a></li>
+					<li><a href="Resume.html.html" target="_blank">RESUME</a></li>
+					<li><a href="Resource.html.html" target="_blank">RESOURCE</a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars onclick=" onclick="showMenu()"></i>
+		</nav>
+		<h1>My Hobby</h1>
+	</section>
+
+	<!-------			MY HOBBY		   ------->
+	<section class="HOBBY">
+	  <div class="my-hobby">
+	    <div class="my-hobby-text">
+	      <h2>MY EXTROVERT HOBBY</h2>
+	      <p>Since I was five years old, I've had a passion for football. Football is the most popular sport in the world, and it is played in many countries. In my high school, I was selected to be a member of the football team representing my school and we won third place in the school competition. I played defender in that competition. </p>
+	    </div>
+
+	    <div class="ronaldo">
+	    	<tr>
+				<td><img src="images/ronaldo_siu.gif" width="270" height="200"></td>
+			</tr>
+		</div>
+	  </div>
+
+	  <div class="Interest1">
+	    <div class="work">
+	      <i class="fa-solid fa-earth-europe"></i>
+	      <p class="work-heading">Country</p>
+	      <p class="work-text">There are several countries that I enjoy watching play football, but the one that I enjoy seeing the most is German. Their players did not play football the way other countries do; they were not greedy for points, they used tactic when the opposition received the ball, and they scored by passing to each other rather than soloing the ball. This is how I truly define football. Passing, tactic, and scoring, among other things. This is why, when it comes to football, I choose Germany as my favourite country.</p>
+	      <img src="images/german.png">    
+		</div>
+	    <div class="work">
+	      <i class="fa-solid fa-flag"></i>
+	      <p class="work-heading">Club</p>
+	      <p class="work-text">There are many clubs that are enjoyable to be watched to like Real Madrid, Barcelona, Liverpool and more. But the one that I enjoy watching the most is Real Madrid. Their players consists of the best players of the world like Marcelo, Cristiano Ronaldo, Ramos, Bale, and more. Real Madrid won the most European Cups in Champions League, with 13 titles including a three-year winning streak from 2015 to 2018. This facts shows to the entire world who the reigning football club is.</p>
+	      <img src="images/real_madrid.png">
+	    </div>
+	    <div class="work">
+	      <i class="fa-solid fa-thumbs-up"></i>
+	      <p class="work-heading">Player</p>
+	      <p class="work-text">My favourite football player is Cristiano Ronaldo. He is a Portuguese professional footballer who captains the Portugal national team and plays forward for Premier League club Manchester United. Ronaldo has won five Ballon d'Or trophies and four European Golden Shoes, the most by a European player. He is largely recognised as the top player in the world and widely regarded as one of the greatest players of all time. He is not only good in football but also has a positive personality that includes traits such as kindness, hard effort, and passion.</p>
+	      <img src="images/ronaldo.png">    
+	  	</div>
+	  </div>
+
+	  <div class="videos">
+	  	<p><b>Here are some of the great moments of videos football.</b></p>
+			<iframe width="350" height="300" src="https://www.youtube.com/embed/mUjHyDgsz5s"></iframe>
+			<iframe width="350" height="300" src="https://www.youtube.com/embed/wjoS-qfM0uQ"></iframe>
+			<iframe width="350" height="300" src="https://www.youtube.com/embed/1F9L051usHc"></iframe>
+			<iframe width="350" height="300" src="https://www.youtube.com/embed/t7_tnbSSXMQ"></iframe>
+	   </div>
+	</section>
+
+	<!-------JavaScript for Toggle Menu------->
+	<script>
+		var navLinks = document.getElementById("navLinks");
+		function showMenu(){
+			navLinks.style.right = "0";
+		}
+		function hideMenu(){
+			navLinks.style.right = "-200px";
+		}
+	</script>
+</body>
+</html>
